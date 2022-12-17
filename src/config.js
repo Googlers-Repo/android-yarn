@@ -409,7 +409,7 @@ export default class Config {
       }
     }
 
-    this.plugnplayShebang = String(this.getOption('plugnplay-shebang') || '') || '/usr/bin/env node';
+    this.plugnplayShebang = String(this.getOption('plugnplay-shebang') || '') || '/system/bin/env node';
     this.plugnplayBlacklist = String(this.getOption('plugnplay-blacklist') || '') || null;
 
     this.ignoreScripts = opts.ignoreScripts || Boolean(this.getOption('ignore-scripts', false));
